@@ -1,46 +1,65 @@
-
-<div class="container">
-  <app-menu></app-menu>
+<div >
+  <div>
+    <app-menu></app-menu>
+  </div>
   <div class="row">
-    <!-- <p>Hola Mundo¡¡¡</p>
+    <!-- <p> Hola Mundo!!!!!!</p>
+
     <div>
       <h1>IDGS 902</h1>
-    </div>
-    <div>
+    </div> -->
+    <!-- Interpolación de Texto -->
+    <!-- <div>
       {{title}}
     </div>
     <div>
-      La suma de 2+2 es: {{2+2}}
+      La suma de 2 + 2 es: {{2+2}}
+    </div> -->
+    <!-- Invocar funciones -->
+    <!--<div>
+      El doble de 3 es {{duplicar(3)}}
     </div>
-    <div >EL doble de 3 es: {{duplicaN(3)}}</div>
+
+    <hr>
+
+    <div>
+      <b>Matricula: </b>{{alumno.matricula}}
+    </div>
+    <div>
+      <b>Apellido: </b>{{alumno.apaterno | uppercase}}
+    </div>
+    <div>
+      <b>Nombre: </b>{{alumno.nombre | lowercase}}
+    </div>
+    <div>
+      <b>Fecha de Nacimiento: </b>{{alumno.fechaNacimiento | date: 'dd/MM/yyyy'}}
+    </div>
+    <div>
+      <b>Inscrito:</b> {{alumno.Inscrito | currency}}
+    </div>
+
     <hr>
     <div>
-      <b>Matricula:</b>{{alumno.matricula}}
-    </div>
-    <div>
-      <b>Apellido Paterno:</b>{{alumno.apaterno | uppercase}}
-    </div>
-    <div>
-      <b>Nombre:</b>{{alumno.nombre| lowercase}}
-    </div>
-    <div>
-      <b>Inscrito?:</b>{{alumno.Inscritro  | currency}}
-    </div>
-    <div>
-      <b>Fecha: </b>{{alumno.fechaNacimiento | date:'dd-MM-yyyy'}}
+      <app-grupos></app-grupos>
     </div>
     <hr>
-    <app-grupos></app-grupos>
+    <div>
+      <app-idgs902></app-idgs902>
+    </div>
     <hr>
-    <app-alumnos></app-alumnos>
-    <hr>
-    <app-idgs></app-idgs>
-    <hr> -->
-    <!-- <app-iric></app-iric> -->
-    <!-- <app-suma></app-suma>
-    <app-operas-bas></app-operas-bas> -->
-    <h1 style="text-align: center;" class="my-2">Distancia entre 2 puntos</h1>
-<app-distancia2-pcomponents></app-distancia2-pcomponents>
+    <div>
+      <app-idgs></app-idgs>
+    </div> -->
+    <div>
+      <router-outlet></router-outlet>
+      <!-- <app-alumno-reactive></app-alumno-reactive> -->
+      <!-- <app-iric></app-iric> -->
+      <!-- <app-suma></app-suma>
+      <hr>
+      <app-operasbas></app-operasbas>
+      <hr>
+      <app-calculo-d2-p></app-calculo-d2-p> -->
+
+    </div>
   </div>
 </div>
-

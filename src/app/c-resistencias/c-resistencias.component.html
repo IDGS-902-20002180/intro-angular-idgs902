@@ -1,0 +1,110 @@
+<div class="contenedor">
+    <div class="col-xs-6" id="divR">
+        <div class="bootstrap-responsive">
+            <span>
+                <h1>Calculadora de omhs</h1>
+            </span>
+
+                <div class="control-group">
+                    <label>1°  Banda De Color:</label>
+                    <select class="form-select" [(ngModel)]="linea1" aria-label="Default select example">
+                        <option selected>Selecciona el color de la banda</option>
+                        <option value="black">Negro</option>
+                        <option value="chocolate">Marron</option>
+                        <option value="red">Rojo</option>
+                        <option value="orange">Naranja</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="green">Verde</option>
+                        <option value="blue">Azul</option>
+                        <option value="purple">Violeta</option>
+                        <option value="grey">Gris</option>
+                        <option value="white">Blanco</option>
+                        
+                    </select>
+                
+                    
+                </div>
+                <div class="control-group">
+                    <label class="my-3">2°  Banda De Color:</label>
+                    <select class="form-select" [(ngModel)]="linea2" aria-label="Default select example">
+                        <option selected>Selecciona el color de la banda</option>
+                        <option value="black">Negro</option>
+                        <option value="chocolate">Marron</option>
+                        <option value="red">Rojo</option>
+                        <option value="orange">Naranja</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="green">Verde</option>
+                        <option value="blue">Azul</option>
+                        <option value="purple">Violeta</option>
+                        <option value="grey">Gris</option>
+                        <option value="white">Blanco</option>
+                        
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label class="my-3">Multiplicador:</label>
+                    <select class="form-select" [(ngModel)]="linea3" aria-label="Default select example">
+                        <option selected>Selecciona el color de la banda</option>
+                        <option value="black">Negro</option>
+                        <option value="chocolate">Marron</option>
+                        <option value="red">Rojo</option>
+                        <option value="orange">Naranja</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="green">Verde</option>
+                        <option value="blue">Azul</option>
+                        <option value="purple">Violeta</option>
+                        <option value="grey">Gris</option>
+                        <option value="white">Blanco</option>
+                        <option value="gold">Dorado</option>
+                        <option value="silver">Plateado</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>Tolerancia:</label><br>
+                    <input class="form-check-input" type="radio" [(ngModel)]="tolerancia" name="tolerancia" id="gold">
+                    <label class="form-check-label" for="gold">
+                    Dorada
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" [(ngModel)]="tolerancia" name="tolerancia" id="silver" checked>
+                    <label class="form-check-label" for="silver">
+                    Plateada
+                    </label>
+
+                </div>
+                <button class="btn btn-primary mx-2 my-3">Calcular</button>
+                <button class="btn btn-warning">Limpiar</button>
+        </div>
+        <div class="control-group">
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th>Banda 1</th>
+                    <th>Banda 2</th>
+                    <th>Banda 3</th>
+                    <th>Banda 4</th>
+                    <th>Valor</th>
+                    <th>Valor Maximo</th>
+                    <th>Valor Minimo</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+        </div>
+    </div>
+
+    </div>

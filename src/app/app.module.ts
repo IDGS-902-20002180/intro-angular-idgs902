@@ -1,37 +1,47 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NamesGrupos } from './utl/grupos.component';
-import { NamesGrupos2 } from './utl/grupos2.component';
-import { IdgsComponent } from './utl/idgs/idgs.component';
+import { NameGrupos } from './utl/grupos.component';
+import { NameIdgs902 } from './utl/idgs902.component';
+import { Idgs902Component } from './utl/idgs902/idgs902.component';
 import { IricComponent } from './utl/iric/iric.component';
 import { MenuComponent } from './utl/menu/menu.component';
-import { SumaComponent } from './utl/formularios/suma/suma.component';
-import { OperasModule } from './utl/formularios/operas/operas.module';
-import { Distancia2PModule } from '../app/distancia2-p/distancia2-p.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SumaComponent } from './utl/fromularios/suma/suma.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OperasModule } from './utl/fromularios/operas/operas.module';
+import { Distancia2pModule } from './distancia2p/distancia2p.module';
+import { CalificacionAlumComponent } from './utl/calificacion-alum/calificacion-alum.component';
+import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
+import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
+import { AppRoutingModule } from './app-routing.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NamesGrupos,
-    NamesGrupos2,
-    IdgsComponent,
+    NameGrupos,
+    NameIdgs902,
+    Idgs902Component,
     IricComponent,
     MenuComponent,
     SumaComponent,
-  
+    CalificacionAlumComponent,
+    AlumnoFilterPipe,
+    AlumnoReactiveComponent,
+    
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     OperasModule,
-    Distancia2PModule
+    Distancia2pModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

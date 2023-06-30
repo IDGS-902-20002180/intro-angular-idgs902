@@ -7,17 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'intro-angular-idgs902';
+
+  // Creación de Objeto
   alumno = {
-    matricula: 123,
+    matricula: 1234,
     nombre: 'Mario',
     apaterno: 'Lopez',
-    Inscritro:2745.9,
+    Inscrito: 2745.9,
     fechaNacimiento: new Date()
   };
 
-
-  duplicaN(n:number):number{
-    return n*2;
+  duplicar(n: number): number {
+    return n * 2;
   }
+
+
 
 }

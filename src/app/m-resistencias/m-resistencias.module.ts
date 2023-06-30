@@ -7,13 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
-import { Distancia2PComponentsComponent } from '../distancia2-pcomponents/distancia2-pcomponents.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { CResistenciasComponent } from '../c-resistencias/c-resistencias.component';
+
 
 @NgModule({
   declarations: [
-    Distancia2PComponentsComponent
+    CResistenciasComponent
   ],
   imports: [
     CommonModule,
@@ -24,10 +25,10 @@ import { MatInputModule } from '@angular/material/input';
     MatButtonModule,
     MatFormFieldModule,
     MatListModule,
-    MatSelectModule,
+    MatSelectModule
   ],
   exports: [
-    Distancia2PComponentsComponent
+    CResistenciasComponent
   ]
 })
-export class Distancia2PModule { }
+export class MResistenciasModule { }
